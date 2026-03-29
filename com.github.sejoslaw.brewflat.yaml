@@ -1,0 +1,49 @@
+app-id: com.github.sejoslaw.brewflat
+runtime: org.freedesktop.Sdk
+runtime-version: '25.08'
+sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.rust-stable
+command: start-brew.sh
+
+finish-args:
+  - --share=network
+  - --share=ipc
+  - --socket=x11
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --socket=pulseaudio
+  - --device=kvm
+  - --device=dri
+  - --persist=.linuxbrew
+
+modules:
+  - name: alacritty
+    buildsystem: simple
+    build-options:
+      append-path: /usr/lib/sdk/rust-stable/bin
+      build-args:
+        - --share=network
+      env:
+        - RUSTUP_TOOLCHAIN: stable
+    build-commands:
+      - cargo build --release
+      - install -D target/release/alacritty /app/bin/alacritty
+    sources:
+      - type: git
+        url: https://github.com/alacritty/alacritty.git
+        tag: v0.13.2
+
+  - name: brew-setup
+    buildsystem: simple
+    build-commands:
+      - install -D start-brew.sh /app/bin/start-brew.sh
+      - install -D com.github.sejoslaw.brewflat.desktop /app/share/applications/com.github.sejoslaw.brewflat.desktop
+      - install -D com.github.sejoslaw.brewflat.png /app/share/icons/hicolor/512x512/apps/com.github.sejoslaw.brewflat.png
+    sources:
+      - type: file
+        path: start-brew.sh
+      - type: file
+        path: com.github.sejoslaw.brewflat.desktop
+      - type: file
+        path: com.github.sejoslaw.brewflat.png

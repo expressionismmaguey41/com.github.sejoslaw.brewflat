@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Brewflat
+Comment=Homebrew as Flatpak
+Exec=start-brew.sh
+Icon=com.github.sejoslaw.brewflat
+Terminal=false
+Categories=Development;TextEditor;
